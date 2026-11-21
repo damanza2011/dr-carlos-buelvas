@@ -4,3 +4,6 @@ Thumbs.db
 node_modules
 .env
 .env.local
+version 2/
+*.py
+*.html.dump
