@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Dr. Carlos Buelvas — Odontología Especializada & Estética Dental
+   Luxury Clinical Boutique Stylesheet (WCAG 2.1 AA Compliant)
+   ========================================================================== */
+
+:root {
+  --color-marfil: #FAFAF8;
+  --color-blanco: #FFFFFF;
+  --color-petroleo: #0F2937;
+  --color-petroleo-dark: #0A1B24;
+  --color-bosque: #0E3A3B;
+  --color-dorado: #C6A46C;
+  --color-dorado-light: #F4ECE1;
+  --color-turquesa: #0D9488;
+  --color-carbon: #1E293B;
+}
+
+/* Tipografía de Alto Rango Editorial */
+.font-display {
+  font-family: 'Playfair Display', Cormorant Garamond, Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* Suavizado de Fuentes */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Médico */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-dark {
+  background: rgba(15, 41, 55, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Shimmer Luxury para Botones de Acción Primaria */
+.shimmer-luxury {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-luxury::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg);
+  animation: shimmerEffect 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+@keyframes shimmerEffect {
+  0% { transform: translate(-100%, -100%) rotate(30deg); }
+  35%, 100% { transform: translate(100%, 100%) rotate(30deg); }
+}
+
+/* Micrófono Activo & Ondas de Voz (STT) */
+.mic-active {
+  background-color: #EF4444 !important;
+  color: #FFFFFF !important;
+  animation: micPulse 1.4s infinite;
+  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+}
+
+@keyframes micPulse {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 14px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+/* Onda Sonora Animada para Reproducción de Voz (TTS) */
+.voice-wave-bar {
+  animation: soundwave 1.2s ease-in-out infinite;
+}
+
+.voice-wave-bar:nth-child(2) { animation-delay: 0.2s; }
+.voice-wave-bar:nth-child(3) { animation-delay: 0.4s; }
+.voice-wave-bar:nth-child(4) { animation-delay: 0.1s; }
+.voice-wave-bar:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes soundwave {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+/* Scrollbar Personalizado Elegante */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-marfil);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dorado);
+}
+
+/* Bloqueo de Scroll al Abrir Cajón Móvil */
+.overflow-hidden-mobile {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .overflow-hidden-mobile {
+    overflow: auto;
+  }
+}
