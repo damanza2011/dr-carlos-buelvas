@@ -2,7 +2,7 @@
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Dr. Carlos Buelvas | Odontología Especializada & Estética Dental en Barranquilla</title>
   
   <meta name="description" content="Clínica boutique del Dr. Carlos Buelvas en Barranquilla. Especialista en Rehabilitación Oral, Diseño de Sonrisa en Lentes Cerámicos E-Max, Implantes 3D y Ortodoncia Invisible. Contacto oficial: +57 300 704 5427.">
@@ -13,7 +13,7 @@
   <meta property="og:title" content="Dr. Carlos Buelvas | Odontología Especializada & Estética Dental">
   <meta property="og:description" content="Diseño de sonrisa de alta precisión, lentes cerámicos E-Max, implantes dentales 3D y atención boutique en Barranquilla.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="assets/dr-carlos-buelvas.jpg">
 
   <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +48,7 @@
             'clinical': '0 4px 20px -2px rgba(15, 41, 55, 0.05)',
             'clinical-lg': '0 15px 35px -5px rgba(15, 41, 55, 0.08)',
             'clinical-float': '0 25px 50px -12px rgba(15, 41, 55, 0.15)',
+            'drawer': '-10px 0 30px rgba(15, 41, 55, 0.25)',
           }
         }
       }
@@ -60,33 +61,36 @@
 <body class="bg-marfil text-carbon font-sans antialiased selection:bg-dorado-light selection:text-petroleo relative overflow-x-hidden">
 
   <!-- Barra de Notificación Superior / Disponibilidad y WhatsApp -->
-  <aside class="bg-petroleo text-marfil text-xs py-2 px-4 text-center tracking-wider font-medium flex items-center justify-center gap-2 relative z-40 border-b border-petroleo-light" aria-label="Aviso de citas">
-    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-    <span>Atención Odontológica Boutique en Barranquilla · Agenda abierta para Valoraciones Presenciales y Virtuales</span>
-    <span class="hidden md:inline">· <strong>WhatsApp Directo:</strong> +57 300 704 5427</span>
+  <aside class="bg-petroleo text-marfil text-[11px] sm:text-xs py-2 px-3 sm:px-4 text-center tracking-wider font-medium flex items-center justify-center gap-2 relative z-40 border-b border-petroleo-light" aria-label="Aviso de citas">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping shrink-0"></span>
+    <span class="truncate">Atención Odontológica Boutique · Barranquilla</span>
+    <span class="hidden md:inline">· Agenda abierta para Valoraciones Presenciales y Virtuales</span>
+    <a href="https://wa.me/573007045427" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 font-bold text-dorado hover:underline ml-1">
+      <span>WhatsApp: +57 300 704 5427</span>
+    </a>
   </aside>
 
   <!-- 1. Header Inteligente Sticky con Glassmorphism -->
   <header class="sticky top-0 z-40 glass-panel border-b border-slate-200/80 transition-all duration-300" id="mainHeader">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- Logo Tipográfico Editorial de Prestigio -->
-      <a href="#" class="group flex flex-col items-start focus:outline-none focus:ring-2 focus:ring-petroleo/20 rounded-xl p-1" aria-label="Inicio Dr. Carlos Buelvas">
-        <div class="flex items-center gap-2">
-          <span class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-petroleo group-hover:text-dorado-dark transition-colors">
+      <a href="#" class="group flex flex-col items-start focus:outline-none focus:ring-2 focus:ring-petroleo/20 rounded-xl p-1 max-w-[220px] sm:max-w-none" aria-label="Inicio Dr. Carlos Buelvas">
+        <div class="flex items-center gap-1.5 sm:gap-2">
+          <span class="font-display text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight text-petroleo group-hover:text-dorado-dark transition-colors truncate">
             Dr. Carlos Buelvas
           </span>
-          <span class="text-[9px] font-sans tracking-widest text-petroleo font-bold uppercase px-2 py-0.5 rounded-full bg-dorado-light border border-dorado/40">
+          <span class="text-[8px] sm:text-[9px] font-sans tracking-widest text-petroleo font-bold uppercase px-1.5 sm:px-2 py-0.5 rounded-full bg-dorado-light border border-dorado/40 shrink-0">
             Estética Dental
           </span>
         </div>
-        <span class="text-[10px] tracking-[0.2em] uppercase text-carbon-muted -mt-0.5 font-medium">
+        <span class="text-[9px] sm:text-[10px] tracking-wider sm:tracking-[0.2em] uppercase text-carbon-muted -mt-0.5 font-medium truncate w-full">
           Rehabilitación Oral & Lentes Cerámicos · Barranquilla
         </span>
       </a>
 
       <!-- Navegación Fluida (Desktop) -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-carbon-muted" aria-label="Navegación principal">
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-7 text-sm font-medium text-carbon-muted" aria-label="Navegación principal">
         <a href="#tratamientos" class="hover:text-petroleo transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-dorado hover:after:w-full after:transition-all">Tratamientos</a>
         <a href="#antes-despues" class="hover:text-petroleo transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-dorado hover:after:w-full after:transition-all">Casos Clínicos</a>
         <a href="#doctor" class="hover:text-petroleo transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-dorado hover:after:w-full after:transition-all">El Especialista</a>
@@ -94,12 +98,12 @@
         <a href="#ubicacion" class="hover:text-petroleo transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-dorado hover:after:w-full after:transition-all">Ubicación</a>
       </nav>
 
-      <!-- Botones de Acción (Asistente de Voz/Texto + WhatsApp) -->
-      <div class="flex items-center gap-2.5 sm:gap-3">
+      <!-- Botones de Acción (Header) -->
+      <div class="flex items-center gap-1.5 sm:gap-3">
         
-        <!-- Botón Destacado: Chatbot Concierge con IA (Voz y Texto) -->
-        <button id="openChatbotBtn" 
-                class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-full bg-dorado-light text-petroleo hover:bg-dorado hover:text-white text-xs font-bold tracking-wide transition-all duration-300 shadow-sm border border-dorado/30 transform hover:-translate-y-0.5"
+        <!-- Botón Asistente Dental IA (Voz y Texto) -->
+        <button onclick="DentalBot.open()" 
+                class="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-dorado-light text-petroleo hover:bg-dorado hover:text-white text-[11px] sm:text-xs font-bold tracking-wide transition-all duration-300 shadow-sm border border-dorado/30 active:scale-95"
                 title="Abrir Asistente Dental con Voz y Texto">
           <span class="text-sm">🎙️</span>
           <span class="hidden sm:inline">Asistente Voz & Texto</span>
@@ -110,149 +114,267 @@
         <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20estoy%20visitando%20su%20p%C3%A1gina%20web%20y%20quisiera%20agendar%20una%20cita%20de%20valoraci%C3%B3n." 
            target="_blank" 
            rel="noopener noreferrer"
-           class="shimmer-luxury inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-petroleo text-white text-xs uppercase font-semibold tracking-wider hover:bg-petroleo-dark transition-all duration-300 shadow-clinical hover:shadow-clinical-lg transform hover:-translate-y-0.5">
-          <svg class="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
+           class="shimmer-luxury inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-petroleo text-white text-[11px] sm:text-xs uppercase font-semibold tracking-wider hover:bg-petroleo-dark transition-all duration-300 shadow-clinical hover:shadow-clinical-lg active:scale-95"
+           aria-label="Contactar por WhatsApp">
+          <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-current text-emerald-400" viewBox="0 0 24 24">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
           </svg>
-          <span class="hidden sm:inline">WhatsApp</span>
+          <span class="hidden md:inline">WhatsApp</span>
         </a>
 
-        <!-- Botón Menú Móvil -->
-        <button id="mobileMenuToggle" 
-                class="lg:hidden p-2 rounded-xl text-petroleo hover:bg-slate-100 transition-colors"
-                aria-label="Abrir menú de navegación">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <!-- Botón Menú Móvil Ultra-Elegante -->
+        <button id="mobileMenuOpenBtn" 
+                class="lg:hidden p-2 rounded-xl text-petroleo hover:bg-slate-100 transition-colors active:scale-95 border border-slate-200/80 bg-white shadow-xs"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="mobileDrawerSheet">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
         </button>
 
       </div>
     </div>
+  </header>
 
-    <!-- Menú Desplegable Móvil -->
-    <div id="mobileMenuPanel" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-6 transition-all duration-300">
-      <div class="flex flex-col gap-4 text-base font-medium text-petroleo">
-        <a href="#tratamientos" class="mobile-nav-link py-2 border-b border-slate-100">Tratamientos Odontológicos</a>
-        <a href="#antes-despues" class="mobile-nav-link py-2 border-b border-slate-100">Casos Clínicos Reales</a>
-        <a href="#doctor" class="mobile-nav-link py-2 border-b border-slate-100">Dr. Carlos Buelvas</a>
-        <a href="#calculador" class="mobile-nav-link py-2 border-b border-slate-100 text-dorado-dark font-bold">Calculador de Sonrisa 3D</a>
-        <a href="#ubicacion" class="mobile-nav-link py-2 border-b border-slate-100">Ubicación & Horarios</a>
-        <div class="pt-2 space-y-2.5">
-          <button onclick="DentalBot.open()" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-dorado-light text-petroleo font-bold text-sm shadow-sm border border-dorado/30">
-            <span>🎙️ Consultar con Asistente de Voz y Texto</span>
-          </button>
-          <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20quisiera%20agendar%20una%20cita%20de%20valoraci%C3%B3n." 
-             target="_blank" rel="noopener noreferrer" 
-             class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-petroleo text-white font-semibold text-sm">
-            <span>WhatsApp Oficial (+57 300 704 5427)</span>
-          </a>
+  <!-- =========================================================================
+       NUEVO MENÚ DESPLEGABLE MÓVIL DE LUJO (OFF-CANVAS SLIDE-OVER DRAWER)
+       Optimizado para smartphones con experiencia táctil de alta gama
+       ========================================================================= -->
+  <div id="mobileDrawerBackdrop" 
+       class="fixed inset-0 z-50 bg-petroleo/75 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"
+       aria-hidden="true">
+    
+    <!-- Contenedor del Drawer deslizante desde la derecha -->
+    <div id="mobileDrawerSheet" 
+         class="fixed top-0 right-0 bottom-0 w-[88vw] max-w-[380px] bg-white h-full shadow-drawer flex flex-col transform translate-x-full transition-transform duration-300 ease-out overflow-hidden z-50">
+      
+      <!-- Encabezado del Menú Móvil -->
+      <div class="p-5 bg-gradient-to-r from-petroleo to-petroleo-dark text-white flex items-center justify-between border-b border-white/10 shrink-0">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-dorado-light text-petroleo flex items-center justify-center font-bold text-lg border-2 border-dorado shrink-0">
+            CB
+          </div>
+          <div class="overflow-hidden">
+            <h3 class="font-display text-base font-bold text-white tracking-tight truncate">Dr. Carlos Buelvas</h3>
+            <p class="text-[10px] text-dorado font-bold uppercase tracking-widest truncate">Odontología Especializada</p>
+          </div>
+        </div>
+
+        <!-- Botón Cerrar (X) -->
+        <button id="mobileMenuCloseBtn" 
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white flex items-center justify-center transition-all focus:outline-none"
+                aria-label="Cerrar menú">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Estado Clínico Inmediato -->
+      <div class="bg-dorado-light/60 px-5 py-2.5 border-b border-dorado/30 flex items-center justify-between text-xs shrink-0">
+        <span class="flex items-center gap-2 text-petroleo font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Consultorio en Barranquilla</span>
+        </span>
+        <span class="text-[11px] font-bold text-dorado-dark uppercase tracking-wider">Altos de Riomar</span>
+      </div>
+
+      <!-- Enlaces de Navegación del Menú -->
+      <div class="flex-1 overflow-y-auto px-4 py-4 space-y-2">
+        
+        <p class="text-[10px] uppercase font-bold text-carbon-muted tracking-widest px-2 mb-1">Secciones Principales</p>
+        
+        <a href="#tratamientos" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-marfil hover:bg-dorado-light/40 border border-slate-200/70 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">🦷</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-semibold">Tratamientos Odontológicos</strong>
+            <span class="text-[11px] text-carbon-muted">Lentes cerámicos, resinas e implantes</span>
+          </div>
+          <span class="text-carbon-muted text-xs">→</span>
+        </a>
+
+        <a href="#antes-despues" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-marfil hover:bg-dorado-light/40 border border-slate-200/70 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">💎</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-semibold">Casos Clínicos Reales</strong>
+            <span class="text-[11px] text-carbon-muted">Galería de sonrisas antes y después</span>
+          </div>
+          <span class="text-carbon-muted text-xs">→</span>
+        </a>
+
+        <a href="#doctor" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-marfil hover:bg-dorado-light/40 border border-slate-200/70 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">👨‍⚕️</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-semibold">Dr. Carlos Buelvas</strong>
+            <span class="text-[11px] text-carbon-muted">Rehabilitador Oral & Filosofía Boutique</span>
+          </div>
+          <span class="text-carbon-muted text-xs">→</span>
+        </a>
+
+        <a href="#calculador" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-dorado-light/50 hover:bg-dorado-light border border-dorado/40 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">✨</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-bold">Calculador de Sonrisa 3D</strong>
+            <span class="text-[11px] text-dorado-dark font-medium">Pre-valoración virtual en 3 pasos</span>
+          </div>
+          <span class="text-dorado font-bold text-xs">→</span>
+        </a>
+
+        <a href="#ubicacion" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-marfil hover:bg-dorado-light/40 border border-slate-200/70 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">📍</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-semibold">Ubicación & Consultorio</strong>
+            <span class="text-[11px] text-carbon-muted">Medical Center Altos de Riomar 402</span>
+          </div>
+          <span class="text-carbon-muted text-xs">→</span>
+        </a>
+
+        <a href="#faq" class="mobile-nav-item flex items-center gap-3.5 p-3 rounded-2xl bg-marfil hover:bg-dorado-light/40 border border-slate-200/70 active:scale-98 transition-all">
+          <span class="w-9 h-9 rounded-xl bg-white shadow-xs flex items-center justify-center text-lg shrink-0">❓</span>
+          <div class="flex-1">
+            <strong class="block text-sm text-petroleo font-semibold">Preguntas Frecuentes</strong>
+            <span class="text-[11px] text-carbon-muted">Tiempos, dolor, citas y financiamiento</span>
+          </div>
+          <span class="text-carbon-muted text-xs">→</span>
+        </a>
+
+      </div>
+
+      <!-- Centro de Acciones Rápidas del Menú Móvil -->
+      <div class="p-4 bg-slate-50 border-t border-slate-200/80 space-y-2.5 shrink-0">
+        
+        <!-- Botón Asistente IA Dental con Voz -->
+        <button id="mobileMenuChatBtn" 
+                class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-dorado-light hover:bg-dorado hover:text-white text-petroleo font-bold text-xs tracking-wide uppercase transition-all shadow-sm border border-dorado/40 active:scale-98">
+          <span class="text-base">🎙️</span>
+          <span>Consultar Asistente de Voz & Texto</span>
+        </button>
+
+        <!-- Botón WhatsApp Oficial -->
+        <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20estoy%20visitando%20su%20web%20desde%20el%20celular%20y%20quisiera%20agendar%20una%20cita%20de%20valoraci%C3%B3n." 
+           target="_blank" rel="noopener noreferrer" 
+           class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs tracking-wider uppercase transition-all shadow-sm active:scale-98">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <span>WhatsApp (+57 300 704 5427)</span>
+        </a>
+
+        <!-- Enlaces Rápidos Redes / Llamada -->
+        <div class="grid grid-cols-2 gap-2 pt-1">
           <a href="https://www.instagram.com/dr.carlosbuelvas/" 
              target="_blank" rel="noopener noreferrer" 
-             class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-semibold text-xs shadow-sm">
-            <span>Instagram Oficial @dr.carlosbuelvas</span>
+             class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold text-[11px] shadow-xs">
+            <span>Instagram</span>
+            <span>↗</span>
+          </a>
+          <a href="tel:+573007045427" 
+             class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-petroleo text-white font-bold text-[11px] shadow-xs">
+            <span>📞 Llamar</span>
           </a>
         </div>
+
       </div>
+
     </div>
-  </header>
+  </div>
 
   <main>
     <!-- 2. Hero Section: Sensación Clínica Boutique & Alta Autoridad Médica -->
-    <section class="relative pt-8 pb-16 sm:pt-14 sm:pb-24 overflow-hidden bg-gradient-to-b from-marfil via-white to-marfil">
+    <section class="relative pt-6 pb-14 sm:pt-14 sm:pb-24 overflow-hidden bg-gradient-to-b from-marfil via-white to-marfil">
       <div class="absolute top-1/4 -left-28 w-96 h-96 bg-dorado-light rounded-full blur-3xl opacity-50 pointer-events-none"></div>
       <div class="absolute top-1/3 -right-28 w-96 h-96 bg-turquesa/10 rounded-full blur-3xl opacity-40 pointer-events-none"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           <!-- Columna Izquierda: Mensaje de Marca & Conversión -->
-          <div class="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
+          <div class="lg:col-span-7 space-y-5 sm:space-y-8 text-center lg:text-left">
             
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dorado-light/80 border border-dorado/40 text-petroleo text-xs tracking-widest uppercase font-bold">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-dorado-light/80 border border-dorado/40 text-petroleo text-[11px] sm:text-xs tracking-wider sm:tracking-widest uppercase font-bold">
               <span class="w-2 h-2 rounded-full bg-dorado animate-pulse"></span>
               <span>Odontología de Alta Precisión · Barranquilla</span>
             </div>
 
-            <h1 class="font-display text-4xl sm:text-5xl md:text-6xl text-petroleo leading-[1.08] tracking-tight font-medium">
+            <h1 class="font-display text-3xl sm:text-5xl md:text-6xl text-petroleo leading-[1.12] tracking-tight font-medium">
               El arte del diseño de sonrisa con <span class="italic font-normal text-dorado">precisión digital 3D</span> y armonía facial.
             </h1>
 
-            <p class="text-carbon-muted text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+            <p class="text-carbon-muted text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
               Creaciones dentales personalizadas lideradas por el <strong>Dr. Carlos Buelvas</strong>. Lentes cerámicos en disilicato de litio, carillas biomiméticas sin desgaste invasivo e implantes guiados por computador en un entorno clínico boutique de máxima exclusividad.
             </p>
 
-            <!-- Acciones Principales del Hero -->
-            <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <!-- Acciones Principales del Hero (Mobile Stack) -->
+            <div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center lg:justify-start gap-3 pt-1">
               
               <!-- Botón Primario: Agendar Valoración WhatsApp -->
               <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20deseo%20agendar%20mi%20cita%20de%20valoraci%C3%B3n%20para%20dise%C3%B1o%20de%20sonrisa." 
                  target="_blank" rel="noopener noreferrer"
-                 class="w-full sm:w-auto px-8 py-4 rounded-full bg-petroleo hover:bg-petroleo-dark text-white text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-clinical hover:shadow-clinical-lg text-center flex items-center justify-center gap-2 group">
+                 class="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-full bg-petroleo hover:bg-petroleo-dark text-white text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-clinical hover:shadow-clinical-lg text-center flex items-center justify-center gap-2 active:scale-95 group">
                 <span>Agendar Cita en WhatsApp</span>
                 <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
               </a>
 
               <!-- Botón Asistente con Voz & Texto -->
               <button onclick="DentalBot.open()" 
-                      class="w-full sm:w-auto px-7 py-4 rounded-full bg-white hover:bg-dorado-light text-petroleo text-xs font-bold tracking-wider uppercase transition-all duration-300 border-2 border-dorado/50 text-center flex items-center justify-center gap-2 shadow-sm">
+                      class="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-full bg-white hover:bg-dorado-light text-petroleo text-xs font-bold tracking-wider uppercase transition-all duration-300 border-2 border-dorado/50 text-center flex items-center justify-center gap-2 shadow-sm active:scale-95">
                 <span>🎙️ Hablar con Asistente IA</span>
               </button>
 
               <!-- Botón Calculador de Sonrisa 3D -->
               <a href="#calculador" 
-                 class="w-full sm:w-auto px-6 py-4 rounded-full bg-slate-100 hover:bg-slate-200 text-carbon text-xs font-semibold tracking-wider uppercase transition-all duration-300 text-center flex items-center justify-center gap-2">
+                 class="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-full bg-slate-100 hover:bg-slate-200 text-carbon text-xs font-semibold tracking-wider uppercase transition-all duration-300 text-center flex items-center justify-center gap-2 active:scale-95">
                 <span>✨ Calculador 3D</span>
               </a>
 
             </div>
 
-            <!-- Indicadores de Confianza Médica y Pacientes Reales -->
-            <div class="pt-8 border-t border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
-              <div>
-                <span class="block font-display text-2xl sm:text-3xl font-semibold text-petroleo">+15 Años</span>
-                <span class="text-xs text-carbon-muted font-medium">Experiencia Clínica</span>
+            <!-- Indicadores de Confianza Médica y Pacientes Reales (Mobile Grid) -->
+            <div class="pt-6 sm:pt-8 border-t border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 text-center">
+              <div class="p-2.5 sm:p-3 rounded-2xl bg-white/70 border border-slate-200/70 shadow-xs">
+                <span class="block font-display text-xl sm:text-3xl font-semibold text-petroleo">+15 Años</span>
+                <span class="text-[11px] sm:text-xs text-carbon-muted font-medium">Experiencia Clínica</span>
               </div>
-              <div>
-                <span class="block font-display text-2xl sm:text-3xl font-semibold text-petroleo">+3.800</span>
-                <span class="text-xs text-carbon-muted font-medium">Sonrisas Diseñadas</span>
+              <div class="p-2.5 sm:p-3 rounded-2xl bg-white/70 border border-slate-200/70 shadow-xs">
+                <span class="block font-display text-xl sm:text-3xl font-semibold text-petroleo">+3.800</span>
+                <span class="text-[11px] sm:text-xs text-carbon-muted font-medium">Sonrisas Diseñadas</span>
               </div>
-              <div>
-                <span class="block font-display text-2xl sm:text-3xl font-semibold text-petroleo">Sin Dolor</span>
-                <span class="text-xs text-carbon-muted font-medium">Anestesia Digital</span>
+              <div class="p-2.5 sm:p-3 rounded-2xl bg-white/70 border border-slate-200/70 shadow-xs">
+                <span class="block font-display text-xl sm:text-3xl font-semibold text-petroleo">Sin Dolor</span>
+                <span class="text-[11px] sm:text-xs text-carbon-muted font-medium">Anestesia Digital</span>
               </div>
-              <div>
-                <span class="block font-display text-2xl sm:text-3xl font-semibold text-petroleo">E-Max</span>
-                <span class="text-xs text-carbon-muted font-medium">Cerámica Certificada</span>
+              <div class="p-2.5 sm:p-3 rounded-2xl bg-white/70 border border-slate-200/70 shadow-xs">
+                <span class="block font-display text-xl sm:text-3xl font-semibold text-petroleo">E-Max</span>
+                <span class="text-[11px] sm:text-xs text-carbon-muted font-medium">Cerámica Certificada</span>
               </div>
             </div>
 
           </div>
 
           <!-- Columna Derecha: Bento-Grid Visual Asimétrico de Lujo -->
-          <div class="lg:col-span-5 relative">
+          <div class="lg:col-span-5 relative mt-4 lg:mt-0">
             <div class="relative rounded-3xl overflow-hidden shadow-clinical-float group bg-slate-100 border border-slate-200/80">
               <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=80" 
                    alt="Diseño de sonrisa dental de alta gama por el Dr. Carlos Buelvas" 
-                   class="w-full h-[420px] sm:h-[480px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                   class="w-full h-[320px] sm:h-[480px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                    loading="eager">
-              <div class="absolute inset-0 bg-gradient-to-t from-petroleo/85 via-petroleo/20 to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-petroleo/90 via-petroleo/30 to-transparent"></div>
               
-              <div class="absolute bottom-6 left-6 right-6 text-white">
+              <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 text-white">
                 <span class="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado block mb-1">
                   Excelencia Clínica & Estética
                 </span>
-                <h3 class="font-display text-2xl font-medium leading-snug">
+                <h3 class="font-display text-xl sm:text-2xl font-medium leading-snug">
                   Naturalidad, Brillo y Simetría Perfecta
                 </h3>
-                <p class="text-xs text-slate-200 mt-1 line-clamp-2">
+                <p class="text-[11px] sm:text-xs text-slate-200 mt-1 line-clamp-2">
                   Sonrisas que iluminan sin verse artificiales. Planificación digital guiada por tomografía y escáner intraoral 3D.
                 </p>
-                <div class="mt-4 flex items-center justify-between pt-3 border-t border-white/20">
-                  <a href="https://www.instagram.com/dr.carlosbuelvas/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-dorado hover:underline flex items-center gap-1.5">
-                    <span>Ver Casos en Instagram @dr.carlosbuelvas</span>
+                <div class="mt-3 sm:mt-4 flex items-center justify-between pt-2.5 sm:pt-3 border-t border-white/20">
+                  <a href="https://www.instagram.com/dr.carlosbuelvas/" target="_blank" rel="noopener noreferrer" class="text-[11px] sm:text-xs font-bold text-dorado hover:underline flex items-center gap-1">
+                    <span>Ver en Instagram @dr.carlosbuelvas</span>
                     <span>→</span>
                   </a>
-                  <span class="text-[10px] uppercase font-bold text-emerald-400 bg-petroleo/80 px-2 py-0.5 rounded-full border border-emerald-500/30">
+                  <span class="text-[9px] sm:text-[10px] uppercase font-bold text-emerald-400 bg-petroleo/80 px-2 py-0.5 rounded-full border border-emerald-500/30">
                     Garantía Escrita
                   </span>
                 </div>
@@ -260,13 +382,13 @@
             </div>
 
             <!-- Badge Flotante de Conectividad con IA -->
-            <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-clinical border border-slate-200 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-dorado-light flex items-center justify-center text-petroleo font-bold text-lg">
+            <div class="absolute -bottom-3 -left-2 sm:-bottom-4 sm:-left-4 bg-white/95 backdrop-blur-md px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl shadow-clinical border border-slate-200 flex items-center gap-2.5 sm:gap-3">
+              <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-dorado-light flex items-center justify-center text-petroleo font-bold text-base sm:text-lg">
                 🎙️
               </div>
               <div>
-                <p class="text-xs font-bold text-petroleo uppercase tracking-wider">Concierge Dental</p>
-                <p class="text-[11px] text-carbon-muted">Voz y Texto Disponible 24/7</p>
+                <p class="text-[11px] sm:text-xs font-bold text-petroleo uppercase tracking-wider">Concierge Dental</p>
+                <p class="text-[10px] sm:text-[11px] text-carbon-muted">Voz y Texto Disponible 24/7</p>
               </div>
             </div>
 
@@ -277,34 +399,34 @@
     </section>
 
     <!-- 3. Catálogo de Tratamientos Odontológicos Especializados (#tratamientos) -->
-    <section id="tratamientos" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+    <section id="tratamientos" class="py-14 sm:py-24 bg-white border-y border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="max-w-3xl mx-auto text-center mb-16">
+        <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <span class="text-xs uppercase tracking-[0.25em] text-dorado-dark font-bold block mb-2">Procedimientos de Alta Precisión</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-petroleo">
+          <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-medium text-petroleo">
             Tratamientos Clínicos Especializados
           </h2>
-          <p class="text-sm sm:text-base text-carbon-muted mt-3">
+          <p class="text-xs sm:text-base text-carbon-muted mt-2.5">
             Cada procedimiento es ejecutado personalmente por el <strong>Dr. Carlos Buelvas</strong> con biomateriales certificados a nivel mundial y protocolos mínimamente invasivos.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="treatmentsGridContainer">
-          <!-- Renderizado dinámico desde clinicData.js o fallback HTML estructurado -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="treatmentsGridContainer">
+          <!-- Renderizado dinámico desde clinicData.js -->
         </div>
 
       </div>
     </section>
 
     <!-- 4. Calculador Interactivo de Sonrisa 3D (#calculador) -->
-    <section id="calculador" class="py-16 sm:py-24 bg-gradient-to-b from-marfil to-slate-50 relative overflow-hidden">
+    <section id="calculador" class="py-14 sm:py-24 bg-gradient-to-b from-marfil to-slate-50 relative overflow-hidden">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="bg-white rounded-3xl border border-slate-200 shadow-clinical-lg p-6 sm:p-12 relative">
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-clinical-lg p-5 sm:p-12 relative">
           
-          <div class="text-center mb-8">
-            <span class="text-xs uppercase tracking-widest text-dorado-dark font-bold block mb-1">Pre-Valoración Virtual</span>
+          <div class="text-center mb-6 sm:mb-8">
+            <span class="text-[11px] sm:text-xs uppercase tracking-widest text-dorado-dark font-bold block mb-1">Pre-Valoración Virtual</span>
             <h3 class="font-display text-2xl sm:text-3xl lg:text-4xl font-medium text-petroleo">
               Calculador Interactivo de Sonrisa
             </h3>
@@ -313,99 +435,99 @@
             </p>
 
             <!-- Barra de Progreso -->
-            <div class="w-full bg-slate-100 rounded-full h-2 mt-6 overflow-hidden">
+            <div class="w-full bg-slate-100 rounded-full h-2 mt-5 sm:mt-6 overflow-hidden">
               <div id="quizProgressBar" class="bg-dorado h-2 rounded-full transition-all duration-300" style="width: 33.3%;"></div>
             </div>
-            <span id="quizStepIndicator" class="text-[11px] font-bold text-carbon-muted uppercase tracking-wider block mt-2">Paso 1 de 3</span>
+            <span id="quizStepIndicator" class="text-[10px] sm:text-[11px] font-bold text-carbon-muted uppercase tracking-wider block mt-2">Paso 1 de 3</span>
           </div>
 
           <!-- Contenedor de Pasos -->
           <div id="quizStepsContainer">
             
             <!-- Paso 1: Objetivo Principal -->
-            <div id="quizStep1" class="space-y-4">
-              <h4 class="font-display text-lg font-bold text-petroleo text-center mb-4">¿Qué es lo principal que te gustaría mejorar en tu sonrisa?</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <button type="button" onclick="SmileQuiz.selectOption(1, 'color', 'Aclarar color y eliminar manchas')" class="quiz-option-card p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3">
-                  <span class="text-2xl">✨</span>
+            <div id="quizStep1" class="space-y-3 sm:space-y-4">
+              <h4 class="font-display text-base sm:text-lg font-bold text-petroleo text-center mb-3 sm:mb-4">¿Qué es lo principal que te gustaría mejorar en tu sonrisa?</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                <button type="button" onclick="SmileQuiz.selectOption(1, 'color', 'Aclarar color y eliminar manchas')" class="quiz-option-card p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3 active:scale-98">
+                  <span class="text-2xl shrink-0">✨</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">Color & Manchas</strong>
-                    <span class="text-xs text-carbon-muted">Dientes amarillos, oscurecidos o con tinciones por café.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">Color & Manchas</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Dientes amarillos, oscurecidos o con tinciones por café.</span>
                   </div>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(1, 'alineacion', 'Alinear dientes sin brackets metálicos')" class="quiz-option-card p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3">
-                  <span class="text-2xl">🌿</span>
+                <button type="button" onclick="SmileQuiz.selectOption(1, 'alineacion', 'Alinear dientes sin brackets metálicos')" class="quiz-option-card p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3 active:scale-98">
+                  <span class="text-2xl shrink-0">🌿</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">Alineación Dental</strong>
-                    <span class="text-xs text-carbon-muted">Corregir apiñamiento o espacios con placas invisibles.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">Alineación Dental</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Corregir apiñamiento o espacios con placas invisibles.</span>
                   </div>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(1, 'desgaste', 'Corregir bordes rotos o desgaste por bruxismo')" class="quiz-option-card p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3">
-                  <span class="text-2xl">💎</span>
+                <button type="button" onclick="SmileQuiz.selectOption(1, 'desgaste', 'Corregir bordes rotos o desgaste por bruxismo')" class="quiz-option-card p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3 active:scale-98">
+                  <span class="text-2xl shrink-0">💎</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">Dientes Cortos o Desgastados</strong>
-                    <span class="text-xs text-carbon-muted">Recuperar longitud juvenil con lentes cerámicos E-Max.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">Dientes Cortos o Desgastados</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Recuperar longitud juvenil con lentes cerámicos E-Max.</span>
                   </div>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(1, 'perdida', 'Reemplazar piezas dentales que me faltan')" class="quiz-option-card p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3">
-                  <span class="text-2xl">🔩</span>
+                <button type="button" onclick="SmileQuiz.selectOption(1, 'perdida', 'Reemplazar piezas dentales que me faltan')" class="quiz-option-card p-3.5 sm:p-4 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-start gap-3 active:scale-98">
+                  <span class="text-2xl shrink-0">🔩</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">Piezas Dentales Faltantes</strong>
-                    <span class="text-xs text-carbon-muted">Implantes de titanio 3D con fuerza masticatoria total.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">Piezas Dentales Faltantes</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Implantes de titanio 3D con fuerza masticatoria total.</span>
                   </div>
                 </button>
               </div>
             </div>
 
             <!-- Paso 2: Plazo Estimado -->
-            <div id="quizStep2" class="space-y-4 hidden">
-              <h4 class="font-display text-lg font-bold text-petroleo text-center mb-4">¿En qué plazo te gustaría iniciar tu tratamiento?</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <button type="button" onclick="SmileQuiz.selectOption(2, 'inmediato', 'Inmediato (Este mismo mes)')" class="quiz-option-card p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center">
+            <div id="quizStep2" class="space-y-3 sm:space-y-4 hidden">
+              <h4 class="font-display text-base sm:text-lg font-bold text-petroleo text-center mb-3 sm:mb-4">¿En qué plazo te gustaría iniciar tu tratamiento?</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
+                <button type="button" onclick="SmileQuiz.selectOption(2, 'inmediato', 'Inmediato (Este mismo mes)')" class="quiz-option-card p-4 sm:p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center active:scale-98">
                   <span class="text-2xl block mb-1">⚡</span>
-                  <strong class="block text-sm text-petroleo font-bold">Inmediato</strong>
-                  <span class="text-xs text-carbon-muted">Este mismo mes</span>
+                  <strong class="block text-xs sm:text-sm text-petroleo font-bold">Inmediato</strong>
+                  <span class="text-[11px] sm:text-xs text-carbon-muted">Este mismo mes</span>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(2, 'proximo', 'En 1 a 3 meses')" class="quiz-option-card p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center">
+                <button type="button" onclick="SmileQuiz.selectOption(2, 'proximo', 'En 1 a 3 meses')" class="quiz-option-card p-4 sm:p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center active:scale-98">
                   <span class="text-2xl block mb-1">🗓️</span>
-                  <strong class="block text-sm text-petroleo font-bold">1 a 3 Meses</strong>
-                  <span class="text-xs text-carbon-muted">Planificando presupuesto</span>
+                  <strong class="block text-xs sm:text-sm text-petroleo font-bold">1 a 3 Meses</strong>
+                  <span class="text-[11px] sm:text-xs text-carbon-muted">Planificando presupuesto</span>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(2, 'evento', 'Planificando para un evento o boda')" class="quiz-option-card p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center">
+                <button type="button" onclick="SmileQuiz.selectOption(2, 'evento', 'Planificando para un evento o boda')" class="quiz-option-card p-4 sm:p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-center active:scale-98">
                   <span class="text-2xl block mb-1">💍</span>
-                  <strong class="block text-sm text-petroleo font-bold">Evento / Boda</strong>
-                  <span class="text-xs text-carbon-muted">Fecha fija especial</span>
+                  <strong class="block text-xs sm:text-sm text-petroleo font-bold">Evento / Boda</strong>
+                  <span class="text-[11px] sm:text-xs text-carbon-muted">Fecha fija especial</span>
                 </button>
               </div>
             </div>
 
             <!-- Paso 3: Disponibilidad de Ayudas Diagnósticas -->
-            <div id="quizStep3" class="space-y-4 hidden">
-              <h4 class="font-display text-lg font-bold text-petroleo text-center mb-4">¿Dispones de fotos de tu sonrisa o radiografías previas?</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <button type="button" onclick="SmileQuiz.selectOption(3, 'si', 'Sí, tengo fotos/radiografías en mi celular')" class="quiz-option-card p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-center gap-3">
-                  <span class="text-3xl">📱</span>
+            <div id="quizStep3" class="space-y-3 sm:space-y-4 hidden">
+              <h4 class="font-display text-base sm:text-lg font-bold text-petroleo text-center mb-3 sm:mb-4">¿Dispones de fotos de tu sonrisa o radiografías previas?</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <button type="button" onclick="SmileQuiz.selectOption(3, 'si', 'Sí, tengo fotos/radiografías en mi celular')" class="quiz-option-card p-4 sm:p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-center gap-3 active:scale-98">
+                  <span class="text-3xl shrink-0">📱</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">Sí, las tengo en mi celular</strong>
-                    <span class="text-xs text-carbon-muted">Puedo enviarlas por WhatsApp para análisis previo.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">Sí, las tengo en mi celular</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Puedo enviarlas por WhatsApp para análisis previo.</span>
                   </div>
                 </button>
-                <button type="button" onclick="SmileQuiz.selectOption(3, 'no', 'No, prefiero tomarlas en el consultorio')" class="quiz-option-card p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-center gap-3">
-                  <span class="text-3xl">🏥</span>
+                <button type="button" onclick="SmileQuiz.selectOption(3, 'no', 'No, prefiero tomarlas en el consultorio')" class="quiz-option-card p-4 sm:p-5 rounded-2xl border-2 border-slate-200 hover:border-dorado transition-all text-left flex items-center gap-3 active:scale-98">
+                  <span class="text-3xl shrink-0">🏥</span>
                   <div>
-                    <strong class="block text-sm text-petroleo font-bold">No, requiero valoración física</strong>
-                    <span class="text-xs text-carbon-muted">Prefiero tomar escaneo 3D directo en la clínica.</span>
+                    <strong class="block text-xs sm:text-sm text-petroleo font-bold">No, requiero valoración física</strong>
+                    <span class="text-[11px] sm:text-xs text-carbon-muted">Prefiero tomar escaneo 3D directo en la clínica.</span>
                   </div>
                 </button>
               </div>
             </div>
 
             <!-- Botones de Navegación del Test -->
-            <div class="flex items-center justify-between pt-8 border-t border-slate-100 mt-6">
-              <button type="button" onclick="SmileQuiz.prevStep()" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-carbon-muted hover:text-petroleo transition-colors">
+            <div class="flex items-center justify-between pt-6 sm:pt-8 border-t border-slate-100 mt-5 sm:mt-6">
+              <button type="button" onclick="SmileQuiz.prevStep()" class="px-4 sm:px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-carbon-muted hover:text-petroleo transition-colors">
                 ← Anterior
               </button>
-              <button type="button" onclick="SmileQuiz.nextStep()" class="px-7 py-3 rounded-full bg-dorado hover:bg-dorado-dark text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-sm">
+              <button type="button" onclick="SmileQuiz.nextStep()" class="px-5 sm:px-7 py-2.5 sm:py-3 rounded-full bg-dorado hover:bg-dorado-dark text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-sm active:scale-95">
                 Siguiente Paso →
               </button>
             </div>
@@ -413,13 +535,13 @@
           </div>
 
           <!-- Contenedor de Resultado Final de Pre-Valoración -->
-          <div id="quizResultContainer" class="hidden text-center py-6 space-y-6 animate-fade-in">
-            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+          <div id="quizResultContainer" class="hidden text-center py-4 sm:py-6 space-y-5 sm:space-y-6 animate-fade-in">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl sm:text-3xl">
               ✓
             </div>
             <div>
-              <span class="text-xs uppercase font-bold text-dorado-dark tracking-widest block mb-1">Diagnóstico Preliminar Sugerido</span>
-              <h4 id="quizResultTreatment" class="font-display text-2xl sm:text-3xl font-bold text-petroleo">
+              <span class="text-[11px] sm:text-xs uppercase font-bold text-dorado-dark tracking-widest block mb-1">Diagnóstico Preliminar Sugerido</span>
+              <h4 id="quizResultTreatment" class="font-display text-xl sm:text-3xl font-bold text-petroleo">
                 Lentes Cerámicos E-Max + Blanqueamiento Láser
               </h4>
               <p id="quizResultDesc" class="text-xs sm:text-sm text-carbon-muted mt-2 max-w-lg mx-auto">
@@ -428,9 +550,9 @@
             </div>
 
             <!-- Acción Directa a WhatsApp -->
-            <div class="pt-4 max-w-md mx-auto space-y-3">
+            <div class="pt-2 sm:pt-4 max-w-md mx-auto space-y-3">
               <a id="quizWhatsAppResultBtn" href="#" target="_blank" rel="noopener noreferrer" 
-                 class="w-full py-4 px-6 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm tracking-wide uppercase shadow-clinical hover:shadow-clinical-lg transition-all flex items-center justify-center gap-2">
+                 class="w-full py-3.5 sm:py-4 px-6 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm tracking-wide uppercase shadow-clinical hover:shadow-clinical-lg transition-all flex items-center justify-center gap-2 active:scale-95">
                 <span>📲 Enviar Resultados al WhatsApp del Doctor</span>
               </a>
               <button type="button" onclick="SmileQuiz.restart()" class="text-xs font-semibold text-carbon-muted hover:text-petroleo underline">
@@ -444,75 +566,82 @@
       </div>
     </section>
 
-    <!-- 5. Perfil del Especialista: Dr. Carlos Buelvas (#doctor) -->
-    <section id="doctor" class="py-16 sm:py-24 bg-white border-b border-slate-200/80">
+    <!-- 5. Perfil del Especialista: Dr. Carlos Buelvas (#doctor) con Fotografía Real -->
+    <section id="doctor" class="py-14 sm:py-24 bg-white border-b border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
+          <!-- Fotografía Real del Dr. Carlos Buelvas con Paciente -->
           <div class="lg:col-span-5 relative">
             <div class="rounded-3xl overflow-hidden shadow-clinical-lg border border-slate-200 bg-slate-900 group relative">
               <img src="assets/dr-carlos-buelvas.jpg" 
                    alt="Dr. Carlos Buelvas en atención clínica personalizada — CB Estética Dental & Odontología Integral Barranquilla" 
-                   class="w-full h-[480px] sm:h-[520px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out">
-              <div class="absolute inset-0 bg-gradient-to-t from-petroleo/80 via-transparent to-transparent opacity-60"></div>
-              <div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-dorado/30 shadow-md flex items-center justify-between">
-                <div>
-                  <p class="text-[11px] font-bold text-dorado-dark uppercase tracking-wider">Atención Clínica Real</p>
-                  <p class="text-xs font-semibold text-petroleo">Dr. Carlos Buelvas con paciente</p>
+                   class="w-full h-[380px] sm:h-[480px] md:h-[520px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                   loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-petroleo/85 via-transparent to-transparent opacity-70"></div>
+              
+              <!-- Badge Flotante Real dentro de la Foto -->
+              <div class="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md rounded-2xl p-2.5 sm:p-3 border border-dorado/30 shadow-md flex items-center justify-between gap-2">
+                <div class="truncate">
+                  <p class="text-[10px] sm:text-[11px] font-bold text-dorado-dark uppercase tracking-wider truncate">Atención Clínica Real</p>
+                  <p class="text-[11px] sm:text-xs font-semibold text-petroleo truncate">Dr. Carlos Buelvas en consulta</p>
                 </div>
-                <span class="text-[10px] font-bold px-2 py-1 rounded-full bg-turquesa/10 text-turquesa border border-turquesa/30">
+                <span class="text-[9px] sm:text-[10px] font-bold px-2 py-1 rounded-full bg-turquesa/10 text-turquesa border border-turquesa/30 shrink-0">
                   CB Estética Dental
                 </span>
               </div>
             </div>
-            <div class="absolute -bottom-5 -right-4 bg-petroleo text-white px-5 py-3 rounded-2xl shadow-clinical border border-petroleo-light">
-              <span class="text-dorado font-bold text-lg block">+15 Años</span>
-              <span class="text-[11px] text-slate-300">Dedicados a la Estética Dental</span>
+
+            <!-- Medalla Flotante de Experiencia -->
+            <div class="absolute -bottom-4 right-2 sm:-bottom-5 sm:-right-4 bg-petroleo text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-clinical border border-petroleo-light">
+              <span class="text-dorado font-bold text-base sm:text-lg block leading-none">+15 Años</span>
+              <span class="text-[10px] sm:text-[11px] text-slate-300">Dedicados a la Estética Dental</span>
             </div>
           </div>
 
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-dorado-light border border-dorado/30 text-petroleo text-xs tracking-widest uppercase font-bold">
+          <div class="lg:col-span-7 space-y-4 sm:space-y-6 mt-4 lg:mt-0">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-dorado-light border border-dorado/30 text-petroleo text-[11px] sm:text-xs tracking-wider sm:tracking-widest uppercase font-bold">
               <span>Dirección Clínica Personalizada</span>
             </div>
 
             <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-petroleo">
               Dr. Carlos Buelvas
             </h2>
-            <p class="text-sm font-semibold text-dorado-dark uppercase tracking-wider">
+            <p class="text-xs sm:text-sm font-semibold text-dorado-dark uppercase tracking-wider">
               Rehabilitador Oral & Diseñador de Sonrisas de Alta Gama
             </p>
 
-            <p class="text-carbon-muted text-sm sm:text-base leading-relaxed">
+            <p class="text-carbon-muted text-xs sm:text-base leading-relaxed">
               Formado con los más exigentes estándares de la odontología internacional, el <strong>Dr. Carlos Buelvas</strong> concibe cada sonrisa como una obra de arte biomimética única. Rechaza los diseños estandarizados o excesivamente blancos que lucen falsos, priorizando la translucidez, textura y forma que armonizan orgánicamente con las facciones del rostro.
             </p>
 
-            <!-- Sellos de Calidad Médica -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
-              <div class="p-4 rounded-2xl bg-marfil border border-slate-200/60">
+            <!-- Sellos de Calidad Médica (Mobile Grid) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-100">
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-marfil border border-slate-200/60">
                 <span class="text-xl block mb-1">🔬</span>
                 <strong class="text-xs font-bold text-petroleo block uppercase">Mínima Invasión</strong>
                 <span class="text-[11px] text-carbon-muted">Preservación máxima de esmalte natural.</span>
               </div>
-              <div class="p-4 rounded-2xl bg-marfil border border-slate-200/60">
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-marfil border border-slate-200/60">
                 <span class="text-xl block mb-1">💻</span>
                 <strong class="text-xs font-bold text-petroleo block uppercase">Flujo Digital 3D</strong>
                 <span class="text-[11px] text-carbon-muted">Escáner intraoral sin pastas incómodas.</span>
               </div>
-              <div class="p-4 rounded-2xl bg-marfil border border-slate-200/60">
+              <div class="p-3.5 sm:p-4 rounded-2xl bg-marfil border border-slate-200/60">
                 <span class="text-xl block mb-1">🤝</span>
                 <strong class="text-xs font-bold text-petroleo block uppercase">1 Paciente por Turno</strong>
                 <span class="text-[11px] text-carbon-muted">Atención VIP sin salas abarrotadas.</span>
               </div>
             </div>
 
-            <div class="pt-2 flex flex-wrap items-center gap-4">
+            <!-- Botones de Acción -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20le%20escribo%20para%20conocer%20disponibilidad%20de%20agenda." 
                  target="_blank" rel="noopener noreferrer" 
-                 class="px-7 py-3.5 rounded-full bg-petroleo text-white hover:bg-petroleo-dark font-semibold text-xs tracking-wider uppercase transition-colors shadow-sm">
+                 class="px-7 py-3.5 rounded-full bg-petroleo text-white hover:bg-petroleo-dark font-semibold text-xs tracking-wider uppercase transition-colors shadow-sm text-center active:scale-95">
                 Agendar con el Doctor
               </a>
-              <a href="https://www.instagram.com/dr.carlosbuelvas/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-carbon font-semibold text-xs tracking-wider uppercase transition-colors flex items-center gap-2">
+              <a href="https://www.instagram.com/dr.carlosbuelvas/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-slate-100 hover:bg-slate-200 text-carbon font-semibold text-xs tracking-wider uppercase transition-colors flex items-center justify-center gap-2 active:scale-95">
                 <span>Instagram @dr.carlosbuelvas</span>
                 <span>↗</span>
               </a>
@@ -525,24 +654,24 @@
     </section>
 
     <!-- 6. Casos Clínicos y Antes / Después (#antes-despues) -->
-    <section id="antes-despues" class="py-16 sm:py-24 bg-marfil">
+    <section id="antes-despues" class="py-14 sm:py-24 bg-marfil">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="max-w-3xl mx-auto text-center mb-16">
+        <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-16">
           <span class="text-xs uppercase tracking-[0.25em] text-dorado-dark font-bold block mb-2">Transformaciones Reales</span>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-petroleo">
+          <h2 class="font-display text-2xl sm:text-4xl lg:text-5xl font-medium text-petroleo">
             Galería de Casos Clínicos
           </h2>
-          <p class="text-sm text-carbon-muted mt-3">
+          <p class="text-xs sm:text-sm text-carbon-muted mt-2.5">
             Resultados auténticos de pacientes que recuperaron su seguridad, sonrisa y función masticatoria con el Dr. Carlos Buelvas.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
           <!-- Caso 1 -->
           <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-clinical group">
-            <div class="relative h-64 overflow-hidden">
+            <div class="relative h-56 sm:h-64 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
                    alt="Diseño de sonrisa en lentes cerámicos antes y después" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -550,7 +679,7 @@
                 Lentes Cerámicos E-Max
               </div>
             </div>
-            <div class="p-6 space-y-2">
+            <div class="p-5 sm:p-6 space-y-2">
               <h4 class="font-display text-lg font-bold text-petroleo">Cierre de Diastemas & Luminosidad</h4>
               <p class="text-xs text-carbon-muted leading-relaxed">
                 Transformación de 8 piezas superiores en disilicato de litio feldespático. Se corrigieron separaciones dentales y se recuperó la curvatura armónica del labio.
@@ -566,7 +695,7 @@
 
           <!-- Caso 2 -->
           <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-clinical group">
-            <div class="relative h-64 overflow-hidden">
+            <div class="relative h-56 sm:h-64 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" 
                    alt="Rehabilitación oral con implantes guiados 3D" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -574,7 +703,7 @@
                 Implantes Digitales 3D
               </div>
             </div>
-            <div class="p-6 space-y-2">
+            <div class="p-5 sm:p-6 space-y-2">
               <h4 class="font-display text-lg font-bold text-petroleo">Recuperación de Piezas Posteriores</h4>
               <p class="text-xs text-carbon-muted leading-relaxed">
                 Colocación de 2 implantes de titanio con férula quirúrgica guiada por tomografía computarizada. Procedimiento libre de suturas agresivas.
@@ -590,7 +719,7 @@
 
           <!-- Caso 3 -->
           <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-clinical group">
-            <div class="relative h-64 overflow-hidden">
+            <div class="relative h-56 sm:h-64 overflow-hidden">
               <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" 
                    alt="Ortodoncia invisible con alineadores transparentes" 
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -598,7 +727,7 @@
                 Alineadores Invisibles
               </div>
             </div>
-            <div class="p-6 space-y-2">
+            <div class="p-5 sm:p-6 space-y-2">
               <h4 class="font-display text-lg font-bold text-petroleo">Corrección de Apiñamiento sin Brackets</h4>
               <p class="text-xs text-carbon-muted leading-relaxed">
                 Tratamiento estético completado en 9 meses con alineadores transparentes removibles en paciente ejecutivo.
@@ -618,12 +747,12 @@
     </section>
 
     <!-- 7. Preguntas Frecuentes Médicas (#faq) -->
-    <section id="faq" class="py-16 sm:py-24 bg-white border-t border-slate-200/80">
+    <section id="faq" class="py-14 sm:py-24 bg-white border-t border-slate-200/80">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center mb-12">
+        <div class="text-center mb-8 sm:mb-12">
           <span class="text-xs uppercase tracking-widest text-dorado-dark font-bold block mb-1">Resolución de Dudas</span>
-          <h2 class="font-display text-3xl sm:text-4xl font-medium text-petroleo">
+          <h2 class="font-display text-2xl sm:text-4xl font-medium text-petroleo">
             Preguntas Frecuentes de Pacientes
           </h2>
           <p class="text-xs sm:text-sm text-carbon-muted mt-2">
@@ -631,18 +760,18 @@
           </p>
         </div>
 
-        <div class="space-y-4" id="faqsAccordionContainer">
+        <div class="space-y-3 sm:space-y-4" id="faqsAccordionContainer">
           <!-- Inyectado dinámicamente desde clinicData.js -->
         </div>
 
-        <div class="mt-12 text-center p-6 rounded-3xl bg-marfil border border-slate-200">
-          <p class="text-sm text-carbon font-semibold">¿Tienes una pregunta específica sobre tu caso?</p>
-          <p class="text-xs text-carbon-muted mt-1">Pregúntale ahora a nuestro asistente virtual con voz o habla directamente por WhatsApp.</p>
-          <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
-            <button onclick="DentalBot.open()" class="px-5 py-2.5 rounded-full bg-dorado-light text-petroleo font-bold text-xs uppercase hover:bg-dorado hover:text-white transition-colors">
+        <div class="mt-10 sm:mt-12 text-center p-5 sm:p-6 rounded-3xl bg-marfil border border-slate-200">
+          <p class="text-xs sm:text-sm text-carbon font-semibold">¿Tienes una pregunta específica sobre tu caso?</p>
+          <p class="text-[11px] sm:text-xs text-carbon-muted mt-1">Pregúntale ahora a nuestro asistente virtual con voz o habla directamente por WhatsApp.</p>
+          <div class="mt-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3">
+            <button onclick="DentalBot.open()" class="px-5 py-3 rounded-full bg-dorado-light text-petroleo font-bold text-xs uppercase hover:bg-dorado hover:text-white transition-colors active:scale-95">
               🎙️ Preguntar por Voz o Texto
             </button>
-            <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20tengo%20una%20pregunta%20sobre%20mi%20caso." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-petroleo text-white font-bold text-xs uppercase hover:bg-petroleo-dark transition-colors">
+            <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20tengo%20una%20pregunta%20sobre%20mi%20caso." target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-full bg-petroleo text-white font-bold text-xs uppercase hover:bg-petroleo-dark transition-colors active:scale-95 text-center">
               Escribir al WhatsApp Oficial
             </a>
           </div>
@@ -652,66 +781,66 @@
     </section>
 
     <!-- 8. Ubicación, Horarios y Citas Presenciales (#ubicacion) -->
-    <section id="ubicacion" class="py-16 sm:py-24 bg-marfil border-t border-slate-200/80">
+    <section id="ubicacion" class="py-14 sm:py-24 bg-marfil border-t border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <div class="lg:col-span-6 space-y-6">
+          <div class="lg:col-span-6 space-y-5 sm:space-y-6">
             <span class="text-xs uppercase tracking-widest text-dorado-dark font-bold block">Consultorio Exclusivo</span>
-            <h2 class="font-display text-3xl sm:text-4xl font-medium text-petroleo">
+            <h2 class="font-display text-2xl sm:text-4xl font-medium text-petroleo">
               Ubicación & Horarios en Barranquilla
             </h2>
-            <p class="text-sm text-carbon-muted leading-relaxed">
+            <p class="text-xs sm:text-sm text-carbon-muted leading-relaxed">
               Ubicados en el epicentro médico y residencial más prestigioso del norte de Barranquilla. Diseñado bajo el concepto de clínica boutique con máxima privacidad, comodidad y parqueadero vigilado.
             </p>
 
-            <div class="space-y-4 pt-2">
+            <div class="space-y-3.5 pt-2">
               <div class="flex items-start gap-3">
-                <span class="text-xl">📍</span>
+                <span class="text-xl shrink-0">📍</span>
                 <div>
-                  <strong class="text-sm text-petroleo font-bold block">Dirección:</strong>
+                  <strong class="text-xs sm:text-sm text-petroleo font-bold block">Dirección:</strong>
                   <span class="text-xs sm:text-sm text-carbon-muted">Cra. 51B # 82-254, Medical Center Altos de Riomar / Consultorio 402</span>
                 </div>
               </div>
               <div class="flex items-start gap-3">
-                <span class="text-xl">⏱️</span>
+                <span class="text-xl shrink-0">⏱️</span>
                 <div>
-                  <strong class="text-sm text-petroleo font-bold block">Horario de Consulta:</strong>
+                  <strong class="text-xs sm:text-sm text-petroleo font-bold block">Horario de Consulta:</strong>
                   <span class="text-xs sm:text-sm text-carbon-muted">Lunes a Viernes: 8:00 AM – 6:30 PM | Sábados: 8:00 AM – 1:30 PM</span>
                 </div>
               </div>
               <div class="flex items-start gap-3">
-                <span class="text-xl">🚗</span>
+                <span class="text-xl shrink-0">🚗</span>
                 <div>
-                  <strong class="text-sm text-petroleo font-bold block">Comodidades:</strong>
-                  <span class="text-xs sm:text-sm text-carbon-muted">Parqueadero privado con seguridad dentro de las instalaciones del edificio médico.</span>
+                  <strong class="text-xs sm:text-sm text-petroleo font-bold block">Comodidades:</strong>
+                  <span class="text-xs sm:text-sm text-carbon-muted">Parqueadero privado con seguridad dentro del edificio médico.</span>
                 </div>
               </div>
             </div>
 
-            <div class="pt-4 flex flex-wrap items-center gap-3">
-              <a href="https://maps.google.com/?q=Dr+Carlos+Buelvas+Odontologia+Barranquilla" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-petroleo text-white text-xs font-semibold uppercase tracking-wider hover:bg-petroleo-dark transition-colors shadow-sm flex items-center gap-2">
+            <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <a href="https://maps.google.com/?q=Dr+Carlos+Buelvas+Odontologia+Barranquilla" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-petroleo text-white text-xs font-semibold uppercase tracking-wider hover:bg-petroleo-dark transition-colors shadow-sm flex items-center justify-center gap-2 active:scale-95">
                 <span>Abrir en Google Maps</span>
                 <span>↗</span>
               </a>
-              <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20deseo%20confirmar%20mi%20asistencia%20en%20el%20consultorio." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-emerald-700 transition-colors shadow-sm flex items-center gap-2">
+              <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20deseo%20confirmar%20mi%20asistencia%20en%20el%20consultorio." target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider hover:bg-emerald-700 transition-colors shadow-sm flex items-center justify-center gap-2 active:scale-95">
                 <span>WhatsApp (+57 300 704 5427)</span>
               </a>
             </div>
           </div>
 
-          <!-- Mapa Simulado / Foto de Instalaciones -->
-          <div class="lg:col-span-6">
+          <!-- Instalaciones / Fachada -->
+          <div class="lg:col-span-6 mt-2 lg:mt-0">
             <div class="rounded-3xl overflow-hidden shadow-clinical border border-slate-200 relative bg-white p-2">
               <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=900&q=80" 
                    alt="Instalaciones del consultorio odontológico Dr. Carlos Buelvas en Barranquilla" 
-                   class="w-full h-80 sm:h-96 object-cover rounded-2xl">
-              <div class="absolute bottom-6 left-6 right-6 bg-petroleo/90 backdrop-blur-md p-4 rounded-xl text-white text-xs flex items-center justify-between">
-                <div>
-                  <strong class="block font-bold">Medical Center Altos de Riomar</strong>
-                  <span class="text-slate-300">Barranquilla, Atlántico</span>
+                   class="w-full h-64 sm:h-96 object-cover rounded-2xl">
+              <div class="absolute bottom-5 left-5 right-5 bg-petroleo/90 backdrop-blur-md p-3.5 sm:p-4 rounded-xl text-white text-xs flex items-center justify-between gap-2">
+                <div class="truncate">
+                  <strong class="block font-bold truncate">Medical Center Altos de Riomar</strong>
+                  <span class="text-slate-300 truncate">Barranquilla, Atlántico</span>
                 </div>
-                <a href="https://maps.google.com/?q=Dr+Carlos+Buelvas+Odontologia+Barranquilla" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-dorado text-white font-bold text-[11px] hover:bg-dorado-dark transition-colors">
+                <a href="https://maps.google.com/?q=Dr+Carlos+Buelvas+Odontologia+Barranquilla" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-dorado text-white font-bold text-[11px] hover:bg-dorado-dark transition-colors shrink-0">
                   Cómo llegar
                 </a>
               </div>
@@ -724,14 +853,14 @@
   </main>
 
   <!-- 9. Footer Institucional & Redes Oficiales -->
-  <footer class="bg-petroleo text-white pt-16 pb-12 border-t border-petroleo-light">
+  <footer class="bg-petroleo text-white pt-14 pb-20 sm:pb-12 border-t border-petroleo-light">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 pb-10 border-b border-white/10">
         
-        <div class="md:col-span-5 space-y-4">
+        <div class="md:col-span-5 space-y-3.5">
           <div class="flex items-center gap-2">
-            <span class="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-white">
+            <span class="font-display text-2xl font-semibold tracking-tight text-white">
               Dr. Carlos Buelvas
             </span>
             <span class="text-xs font-sans tracking-widest text-dorado uppercase font-normal px-2 py-0.5 rounded-full bg-white/10">
@@ -741,7 +870,7 @@
           <p class="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed">
             Odontología Especializada, Rehabilitación Oral y Diseño de Sonrisa con tecnología digital 3D. Atención boutique, ética médica y excelencia estética.
           </p>
-          <div class="pt-2 flex flex-wrap items-center gap-3">
+          <div class="pt-1 flex flex-wrap items-center gap-2.5">
             <a href="https://www.instagram.com/dr.carlosbuelvas/" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Instagram Oficial @dr.carlosbuelvas">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
@@ -751,39 +880,36 @@
             <button onclick="DentalBot.open()" class="px-3.5 py-1.5 rounded-full bg-dorado text-white text-xs font-bold flex items-center gap-1.5 hover:bg-dorado-dark transition-colors shadow-sm">
               <span>🎙️ Asistente de Voz</span>
             </button>
-            <span class="text-xs text-slate-300">Instagram: <strong>@dr.carlosbuelvas</strong></span>
           </div>
         </div>
 
-        <div class="md:col-span-4 space-y-3">
-          <h4 class="font-display text-lg font-medium text-white">Consultorio & Atención</h4>
+        <div class="md:col-span-4 space-y-2.5">
+          <h4 class="font-display text-base sm:text-lg font-medium text-white">Consultorio & Atención</h4>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
             <strong>Atención Personalizada:</strong><br>
-            Dr. Carlos Buelvas · Especialista en Rehabilitación Oral<br>
-            WhatsApp Oficial: <a href="https://wa.me/573007045427" class="text-dorado hover:underline">+57 300 704 5427</a>
+            Dr. Carlos Buelvas · Rehabilitador Oral<br>
+            WhatsApp: <a href="https://wa.me/573007045427" class="text-dorado hover:underline">+57 300 704 5427</a>
           </p>
           <p class="text-xs sm:text-sm text-slate-300">
-            <strong>Sede Principal:</strong><br>
-            Cra. 51B # 82-254, Medical Center Altos de Riomar, Cons. 402<br>
-            Barranquilla, Colombia.
+            <strong>Sede:</strong> Cra. 51B # 82-254, Medical Center Altos de Riomar 402, Barranquilla.
           </p>
         </div>
 
-        <div class="md:col-span-3 space-y-3">
-          <h4 class="font-display text-lg font-medium text-white">Turismo Dental</h4>
+        <div class="md:col-span-3 space-y-2.5">
+          <h4 class="font-display text-base sm:text-lg font-medium text-white">Turismo Dental</h4>
           <p class="text-xs text-slate-300 leading-relaxed">
-            Paquetes coordinados para pacientes residentes en el extranjero. Valoración previa remota y cronograma concentrado para optimizar tu estadía en Barranquilla.
+            Coordinación especial para pacientes del exterior con valoración previa virtual y citas prioritarias para optimizar tu estadía en Barranquilla.
           </p>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <p>© 2026 Dr. Carlos Buelvas · Todos los derechos reservados. Registro Médico Profesional MinSalud Colombia.</p>
-        <div class="flex items-center gap-4">
-          <a href="#" class="hover:text-dorado transition-colors">Aviso de Privacidad</a>
+      <div class="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] sm:text-xs text-slate-400 gap-3 text-center sm:text-left">
+        <p>© 2026 Dr. Carlos Buelvas · Todos los derechos reservados. Registro Médico Profesional Colombia.</p>
+        <div class="flex items-center gap-3">
+          <a href="#" class="hover:text-dorado transition-colors">Privacidad</a>
           <span>·</span>
-          <a href="#" class="hover:text-dorado transition-colors">Términos Clínicos</a>
+          <a href="#" class="hover:text-dorado transition-colors">Términos</a>
           <span>·</span>
           <button onclick="DentalBot.open()" class="text-dorado hover:underline">Asistente IA</button>
         </div>
@@ -793,10 +919,10 @@
   </footer>
 
   <!-- 10. Drawer Desplegable: Chatbot Concierge Dental con Soporte de Voz & Texto -->
-  <div id="chatbotDrawer" class="fixed inset-y-0 right-0 z-50 w-full sm:w-[440px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col border-l border-slate-200">
+  <div id="chatbotDrawer" class="fixed inset-y-0 right-0 z-50 w-full sm:w-[440px] bg-white shadow-drawer transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col border-l border-slate-200">
     
     <!-- Encabezado del Asistente -->
-    <div class="bg-petroleo text-white p-4 sm:p-5 flex items-center justify-between shadow-sm relative">
+    <div class="bg-petroleo text-white p-4 sm:p-5 flex items-center justify-between shadow-sm relative shrink-0">
       <div class="flex items-center gap-3">
         <div class="relative">
           <div class="w-10 h-10 rounded-full bg-dorado-light text-petroleo flex items-center justify-center font-bold text-lg border-2 border-dorado">
@@ -827,7 +953,7 @@
     </div>
 
     <!-- Indicador de Estado de Voz / Transcripción -->
-    <div id="chatVoiceStatus" class="hidden bg-red-50 text-red-700 px-4 py-2 text-xs font-bold text-center border-b border-red-100 flex items-center justify-center gap-2">
+    <div id="chatVoiceStatus" class="hidden bg-red-50 text-red-700 px-4 py-2 text-xs font-bold text-center border-b border-red-100 flex items-center justify-center gap-2 shrink-0">
       <span class="inline-block w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
       <span>🎙️ Escuchando... Habla ahora</span>
     </div>
@@ -863,12 +989,12 @@
     </div>
 
     <!-- Barra Inferior de Entrada (Micrófono STT + Input Texto + Enviar) -->
-    <div class="p-3.5 bg-white border-t border-slate-200">
+    <div class="p-3.5 bg-white border-t border-slate-200 shrink-0">
       <form id="chatbotInputForm" class="flex items-center gap-2">
         
         <!-- Botón de Micrófono para Dictado por Voz (STT) -->
         <button type="button" id="chatMicBtn" 
-                class="p-2.5 rounded-full bg-slate-100 text-slate-700 hover:text-petroleo hover:bg-slate-200 transition-all shrink-0 focus:outline-none"
+                class="p-2.5 rounded-full bg-slate-100 text-slate-700 hover:text-petroleo hover:bg-slate-200 transition-all shrink-0 focus:outline-none active:scale-95"
                 title="Presiona para hablar con tu voz">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
         </button>
@@ -880,37 +1006,37 @@
 
         <!-- Botón Enviar -->
         <button type="submit" 
-                class="p-2.5 rounded-full bg-petroleo text-white hover:bg-petroleo-dark transition-all shrink-0 shadow-sm"
+                class="p-2.5 rounded-full bg-petroleo text-white hover:bg-petroleo-dark transition-all shrink-0 shadow-sm active:scale-95"
                 title="Enviar mensaje">
           <svg class="w-5 h-5 fill-none stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
         </button>
 
       </form>
       <div class="mt-2 text-center">
-        <span class="text-[10px] text-slate-400">Canal oficial verificado · Conexión directa con WhatsApp +57 300 704 5427</span>
+        <span class="text-[10px] text-slate-400">Canal oficial verificado · WhatsApp +57 300 704 5427</span>
       </div>
     </div>
 
   </div>
 
-  <!-- Botón Flotante Permanente de Chatbot / WhatsApp en Pantalla -->
-  <div class="fixed bottom-6 right-5 z-40 flex flex-col items-end gap-2.5">
+  <!-- Botón Flotante Permanente de Chatbot / WhatsApp en Pantalla (Mobile-Optimized) -->
+  <div class="fixed bottom-4 sm:bottom-6 right-3.5 sm:right-5 z-40 flex flex-col items-end gap-2.5 pointer-events-none">
     
     <!-- Botón Flotante WhatsApp -->
     <a href="https://wa.me/573007045427?text=Hola%20Dr.%20Carlos%20Buelvas,%20quisiera%20agendar%20una%20cita%20de%20valoraci%C3%B3n." 
        target="_blank" rel="noopener noreferrer" 
-       class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-clinical-float hover:scale-110 transition-all duration-300"
+       class="w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center shadow-clinical-float hover:scale-110 active:scale-95 transition-all duration-300 pointer-events-auto"
        title="Chatear por WhatsApp Oficial (+57 300 704 5427)">
       <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824zM12 2C6.477 2 2 6.477 2 12c0 1.891.526 3.661 1.442 5.176L2 22l4.981-1.306A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
     </a>
 
     <!-- Botón Flotante Asistente IA (Voz y Texto) -->
     <button onclick="DentalBot.open()" 
-            class="group px-4 py-3 rounded-full bg-petroleo text-white flex items-center gap-2.5 shadow-clinical-float hover:scale-105 transition-all duration-300 border border-dorado/40"
+            class="group px-3.5 sm:px-4 py-2.5 sm:py-3 rounded-full bg-petroleo text-white flex items-center gap-2 shadow-clinical-float hover:scale-105 active:scale-95 transition-all duration-300 border border-dorado/40 pointer-events-auto"
             title="Abrir Asistente Dental con Voz">
       <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></div>
       <span class="text-sm">🎙️</span>
-      <span class="text-xs font-bold uppercase tracking-wider hidden sm:inline">Asistente Dental IA</span>
+      <span class="text-[11px] sm:text-xs font-bold uppercase tracking-wider hidden sm:inline">Asistente Dental IA</span>
     </button>
 
   </div>
@@ -925,42 +1051,44 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // 1. Inicializar Chatbot
-      DentalBot.init();
+      if (window.DentalBot) {
+        DentalBot.init();
+      }
 
       // 2. Renderizar Catálogo de Tratamientos Dinámicos desde clinicData.js
       const grid = document.getElementById('treatmentsGridContainer');
       if (grid && window.CLINIC_DATA && Array.isArray(window.CLINIC_DATA.treatments)) {
         grid.innerHTML = window.CLINIC_DATA.treatments.map(t => {
-          const waLink = window.createWhatsAppLink(t.whatsappMessage);
+          const waLink = window.createWhatsAppLink ? window.createWhatsAppLink(t.whatsappMessage) : `https://wa.me/573007045427?text=${encodeURIComponent(t.whatsappMessage)}`;
           return `
             <div class="bg-marfil rounded-3xl overflow-hidden border border-slate-200 shadow-clinical hover:shadow-clinical-lg transition-all duration-300 flex flex-col group">
-              <div class="relative h-56 overflow-hidden bg-slate-200">
-                <img src="${t.image}" alt="${t.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <span class="absolute top-4 left-4 bg-petroleo/90 backdrop-blur-sm text-dorado text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-dorado/30">
+              <div class="relative h-48 sm:h-56 overflow-hidden bg-slate-200">
+                <img src="${t.image}" alt="${t.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                <span class="absolute top-3 sm:top-4 left-3 sm:left-4 bg-petroleo/90 backdrop-blur-sm text-dorado text-[9px] sm:text-[10px] font-bold uppercase tracking-widest px-2.5 sm:px-3 py-1 rounded-full border border-dorado/30">
                   ${t.badge}
                 </span>
               </div>
-              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div class="p-5 sm:p-6 flex-1 flex flex-col justify-between space-y-4">
                 <div>
                   <span class="text-[10px] font-bold text-dorado-dark uppercase tracking-widest block mb-1">${t.subtitle}</span>
-                  <h3 class="font-display text-xl font-bold text-petroleo leading-snug">${t.name}</h3>
+                  <h3 class="font-display text-lg sm:text-xl font-bold text-petroleo leading-snug">${t.name}</h3>
                   <p class="text-xs text-carbon-muted mt-2 leading-relaxed">${t.description}</p>
                 </div>
                 
                 <div class="space-y-2 pt-2 border-t border-slate-200/80">
-                  <span class="text-[11px] font-bold text-petroleo block uppercase tracking-wider">Beneficios Principales:</span>
+                  <span class="text-[11px] font-bold text-petroleo block uppercase tracking-wider">Beneficios:</span>
                   <ul class="text-xs text-carbon-muted space-y-1">
                     ${t.benefits.slice(0, 2).map(b => `<li class="flex items-center gap-1.5"><span class="text-emerald-500 font-bold">✓</span> ${b}</li>`).join('')}
                   </ul>
                 </div>
 
-                <div class="pt-4 border-t border-slate-200/80 flex items-center justify-between gap-2">
+                <div class="pt-3 sm:pt-4 border-t border-slate-200/80 flex items-center justify-between gap-2">
                   <div>
                     <span class="text-[10px] text-carbon-muted block">Duración:</span>
                     <strong class="text-xs text-petroleo font-bold">${t.duration}</strong>
                   </div>
                   <a href="${waLink}" target="_blank" rel="noopener noreferrer" 
-                     class="px-4 py-2 rounded-full bg-petroleo hover:bg-dorado hover:text-petroleo text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-sm">
+                     class="px-4 py-2 rounded-full bg-petroleo hover:bg-dorado hover:text-petroleo text-white text-xs font-bold uppercase tracking-wider transition-colors shadow-sm active:scale-95">
                     Cotizar
                   </a>
                 </div>
@@ -975,28 +1103,79 @@
       if (faqsContainer && window.CLINIC_DATA && Array.isArray(window.CLINIC_DATA.faqs)) {
         faqsContainer.innerHTML = window.CLINIC_DATA.faqs.map((faq, idx) => `
           <div class="border border-slate-200 rounded-2xl overflow-hidden bg-marfil transition-colors">
-            <button class="w-full px-6 py-4 text-left font-display text-base font-semibold text-petroleo flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(${idx})">
+            <button class="w-full px-4 sm:px-6 py-3.5 sm:py-4 text-left font-display text-sm sm:text-base font-semibold text-petroleo flex items-center justify-between gap-4 focus:outline-none" onclick="toggleFaq(${idx})">
               <span>${faq.question}</span>
               <span id="faqIcon-${idx}" class="text-dorado font-bold text-xl transition-transform duration-200">+</span>
             </button>
-            <div id="faqBody-${idx}" class="hidden px-6 pb-5 text-xs sm:text-sm text-carbon-muted leading-relaxed border-t border-slate-100 pt-3">
+            <div id="faqBody-${idx}" class="hidden px-4 sm:px-6 pb-4 sm:pb-5 text-xs sm:text-sm text-carbon-muted leading-relaxed border-t border-slate-100 pt-3">
               ${faq.answer}
             </div>
           </div>
         `).join('');
       }
 
-      // 4. Toggle Menú Móvil
-      const mobileToggle = document.getElementById('mobileMenuToggle');
-      const mobilePanel = document.getElementById('mobileMenuPanel');
-      if (mobileToggle && mobilePanel) {
-        mobileToggle.addEventListener('click', () => {
-          mobilePanel.classList.toggle('hidden');
-        });
-        document.querySelectorAll('.mobile-nav-link').forEach(link => {
-          link.addEventListener('click', () => mobilePanel.classList.add('hidden'));
+      // 4. CONTROLADOR DEL MENÚ MÓVIL DE LUJO (DRAWER)
+      const mobileOpenBtn = document.getElementById('mobileMenuOpenBtn');
+      const mobileCloseBtn = document.getElementById('mobileMenuCloseBtn');
+      const mobileBackdrop = document.getElementById('mobileDrawerBackdrop');
+      const mobileSheet = document.getElementById('mobileDrawerSheet');
+      const mobileChatBtn = document.getElementById('mobileMenuChatBtn');
+
+      function openMobileMenu() {
+        if (!mobileBackdrop || !mobileSheet) return;
+        mobileBackdrop.classList.remove('pointer-events-none', 'opacity-0');
+        mobileBackdrop.classList.add('pointer-events-auto', 'opacity-100');
+        mobileSheet.classList.remove('translate-x-full');
+        mobileSheet.classList.add('translate-x-0');
+        document.body.classList.add('drawer-open');
+        mobileOpenBtn.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeMobileMenu() {
+        if (!mobileBackdrop || !mobileSheet) return;
+        mobileBackdrop.classList.remove('pointer-events-auto', 'opacity-100');
+        mobileBackdrop.classList.add('pointer-events-none', 'opacity-0');
+        mobileSheet.classList.remove('translate-x-0');
+        mobileSheet.classList.add('translate-x-full');
+        document.body.classList.remove('drawer-open');
+        mobileOpenBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      if (mobileOpenBtn) mobileOpenBtn.addEventListener('click', openMobileMenu);
+      if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMobileMenu);
+
+      // Cerrar al tocar el fondo difuminado
+      if (mobileBackdrop) {
+        mobileBackdrop.addEventListener('click', (e) => {
+          if (e.target === mobileBackdrop) {
+            closeMobileMenu();
+          }
         });
       }
+
+      // Cerrar al presionar cualquier enlace del menú móvil
+      document.querySelectorAll('.mobile-nav-item').forEach(link => {
+        link.addEventListener('click', () => {
+          closeMobileMenu();
+        });
+      });
+
+      // Abrir Chatbot desde el menú móvil y cerrar el menú
+      if (mobileChatBtn) {
+        mobileChatBtn.addEventListener('click', () => {
+          closeMobileMenu();
+          setTimeout(() => {
+            if (window.DentalBot) DentalBot.open();
+          }, 250);
+        });
+      }
+
+      // Cerrar con tecla Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeMobileMenu();
+        }
+      });
     });
 
     function toggleFaq(idx) {

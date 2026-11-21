@@ -1,6 +1,6 @@
 /* ==========================================================================
    Dr. Carlos Buelvas — Odontología Especializada & Estética Dental
-   Luxury Clinical Boutique Stylesheet (WCAG 2.1 AA Compliant)
+   Luxury Clinical Boutique Stylesheet (WCAG 2.1 AA Compliant - Mobile-First)
    ========================================================================== */
 
 :root {
@@ -24,22 +24,28 @@
   font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
 }
 
-/* Suavizado de Fuentes */
+/* Suavizado de Fuentes & Scroll Touch */
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 /* Glassmorphism Médico */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 .glass-dark {
-  background: rgba(15, 41, 55, 0.88);
+  background: rgba(15, 41, 55, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
@@ -111,10 +117,25 @@ html {
   50% { height: 18px; }
 }
 
+/* Drawer Móvil de Lujo - Transiciones suaves */
+#mobileDrawerBackdrop {
+  transition: opacity 0.3s ease-in-out;
+}
+
+#mobileDrawerSheet {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Bloqueo de Scroll */
+body.drawer-open {
+  overflow: hidden !important;
+  touch-action: none;
+}
+
 /* Scrollbar Personalizado Elegante */
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -130,13 +151,7 @@ html {
   background: var(--color-dorado);
 }
 
-/* Bloqueo de Scroll al Abrir Cajón Móvil */
-.overflow-hidden-mobile {
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .overflow-hidden-mobile {
-    overflow: auto;
-  }
+/* Active tap feedback para móviles */
+.active-press:active {
+  transform: scale(0.98);
 }
